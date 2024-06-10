@@ -1,0 +1,257 @@
+body {
+    margin: 0;
+    padding: 0;
+    max-width: 100vw;
+    min-height: 100vh;
+}
+ 
+/* Cabeçalho (parte da logo e da pesquisa) */
+header {
+    padding: 5%;
+    height: 5vh;
+    background-color: #0f0f0f;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+ 
+header img {
+    width: 10vw;
+    border-radius: 100%;
+}
+ 
+form {
+    height: 100%;
+    padding: 5px;
+}
+ 
+.container {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+}
+ 
+input {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 10px;
+    /* height: 48%; */
+    font-size: 16px;
+}
+ 
+.icon_pesquisa {
+    color: #555;
+    margin-left: 2%;
+    margin-right: 5%;
+}
+ 
+.cancelar {
+    background-color: transparent;
+    /* height: 90%; */
+    cursor: pointer;
+    height: 48%;
+    padding-right: 30px;
+    border-radius: 14px;
+}
+ 
+.icon_cancelar {
+    color: #555;
+    cursor: pointer;
+    margin-right: 2%;
+}
+ 
+ 
+/* conteudo principal */
+.div-centralizada {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+ 
+.cabecalho2 {
+    margin-top: 5%;
+    width: 85vw;
+    font-size: 30px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+}
+ 
+.estados {
+    border-radius: 40px;
+    border: 2px solid #000;
+    height: 5vh;
+    width: 70vw;
+}
+ 
+.container2 {
+    display: flex;
+    flex-direction: column;
+}
+ 
+ 
+/* regua Localidade */
+ 
+datalist {
+    display: flex;
+    gap: 4%;
+    writing-mode: horizontal-tb;
+}
+ 
+.opicao {
+    width: 85vw;
+}
+ 
+option {
+    padding: 0;
+}
+ 
+ 
+ 
+ 
+input[type="range"] {
+    width: 80vw;
+    margin: 0;
+}
+ 
+/*
+.span_input_turno {
+    cursor: pointer;
+} */
+ 
+/* disponibilidade */
+.canto{
+    display:flex ;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 90vw;
+}
+ 
+.switch {
+    position: relative;
+    display: inline-block;
+    /* display:flex ;
+    align-items: center;
+    justify-content: center; */
+    /* flex-direction: row; */
+    width: 23vw;
+    height: 4.5vh;
+    margin-top: 10%;
+}
+ 
+.switch input {
+    display: none;
+}
+ 
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    padding-right: 90%;
+     /* pa-right: 2%; */
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 34px;
+}
+ 
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 0.5rem;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 50%;
+}
+ 
+input:checked+.slider {
+    background-color: rgb(255, 208, 0);
+}
+ 
+input:focus+.slider {
+    box-shadow: 0 0 1px rgb(255, 208, 0);
+}
+ 
+input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+ 
+.turnos{
+ 
+    width: 90vw;
+    height: 3vh;
+    padding-top: 5%;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+}
+ 
+ 
+/* filtrar */
+a {
+    text-decoration: none;
+}
+ 
+.div_filtrar {
+    display: flex;
+    justify-content: center;
+    /* background-color: aqua; */
+    padding-top: 20%;
+    /* padding: 13%; */
+    height: 20vh;
+}
+ 
+.btn_filtrar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    background-color: rgb(255, 208, 0);
+    width: 40vw;
+    height: 8vh;
+    border-radius: 10px;
+    border: 0;
+    cursor: pointer;
+    position: relative;
+    transition: all .5s;
+}
+ 
+.bounce-effect:hover {
+    width: 53vw;
+    height: 10vh;
+}
+ 
+/* navegação */
+nav {
+    background-color: #000;
+    min-height: 50px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+ 
+.ul_nav{
+    margin: 0;
+    padding: 4%;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+}
+ 
+.container_icones_nav:hover {
+    transform: scale(1.2);
+    text-shadow: 0 3px 4px rgb(255, 208, 0);
+}

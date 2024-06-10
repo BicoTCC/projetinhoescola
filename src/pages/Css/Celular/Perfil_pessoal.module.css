@@ -1,0 +1,186 @@
+body {
+    margin: 0;
+    padding: 0;
+    max-width: 100vw;
+    max-height: 100vh;
+}
+ 
+header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 6vh;
+    max-width: 100vw;
+}
+ 
+.voltar {
+    cursor: pointer;
+    border: none;
+    background-color: #fff;
+    border-radius: 100%;
+    padding-top: 110%;
+}
+ 
+header button a {
+    width: 100%;
+}
+ 
+/* conteudo principal */
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+ 
+.altura {
+    height: 87vh;
+}
+ 
+/* parte de informações pessoais */
+.container {
+    display: flex;
+    align-items: center;
+    height: 25vh;
+    gap: 6%;
+}
+ 
+.container_img {
+    width: 40vw;
+    height: 20vh;
+}
+ 
+.foto_perfil {
+    width: 29vw;
+    height: 13vh;
+    border: 2px solid rgb(255, 208, 0);
+    border-radius: 100%;
+}
+ 
+.apelido {
+    padding-left: 24%;
+    font-weight: bold;
+}
+ 
+.data_inicio {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 13px;
+    margin-right: 1rem;
+}
+ 
+.linha {
+    background-color: rgb(200, 200, 200);
+    width: 100vw;
+    height: 5px;
+    border-radius: 40px;
+}
+ 
+/* sobre as habilidaes */
+span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ 
+.titulo{
+    padding: 2%;
+    font-size: 26px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+}
+ 
+.btn_informacao{
+    border-radius: 20px;
+    width: 90vw;
+    height: 18vh;
+    background-color: #fff;
+}
+.span_inf{
+    border: 1px solid #000;
+    border-radius: 20px;
+    width: 25vw;
+    height: 3vh;
+    background-color: #e2e2e2;
+}
+ 
+.p_inf{
+    display: flex;
+    justify-content: space-around;
+}
+ 
+ 
+/* avaliações */
+.habilidades {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    /* padding-top: 5%; */
+    /* padding-left: 10%; */
+}
+ 
+.titulo1{
+    font-size: 26px;
+    font-weight: bold;
+}
+ 
+.titulo2{
+    font-size: 13px;
+    padding-left: 4%;
+    font-weight: bold;
+}
+ 
+.conteudo{
+    margin-bottom: 3%;
+    margin-left: 6%;
+    margin-right: 10%;
+    border: 2px solid #000;
+    width: 87vw;
+    border-radius: 20px
+}
+ 
+.span_conteudo{
+    margin-left: 6%;
+    margin-right: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80vw;
+}
+ 
+.borda_foto_comentario{
+    display: flex;
+    align-items: center;
+    justify-content:center ;
+    border-radius: 47%;
+    padding: 3%;
+}
+ 
+.espaco_foto_escrita{
+    display: inline;
+    width: 100vw;
+    padding-left: 5%;
+}
+ 
+ 
+/* navegação */
+ 
+nav {
+    background-color: #000;
+    min-height: 1%;
+}
+ 
+nav ul {
+    margin: 0;
+    padding: 4%;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+}
+ 
+.container_icones_nav:hover {
+    transform: scale(1.2);
+    text-shadow: 0 3px 4px rgb(255, 208, 0);
+}
